@@ -13,8 +13,8 @@
     .text{
         font-family: CircularSpotifyText;
         position: absolute;
-        top: 191px;
-        left: 661px;
+        top: 193px;
+        left: 653px;
         font-size: 48px;
         background-color: #18d464;
     }
@@ -66,8 +66,8 @@
 </style>
 <div class="contenedor">
 <img src="{{asset('img/unnamed.jpg')}}" width="3456" height="288">
-    <div class="text">{{$reproductions}}</div>
-    <div class="text-2">{{$reproductions}}</div>
+    <div class="text">{{number_format($reproductions)}}</div>
+    <div class="text-2">{{number_format($reproductions)}}</div>
     <div class="range-custom"><input type="range" class="form-range" min="1" max="31" value="{{date('d')}}" ></div>
 </div>
 </BODY>

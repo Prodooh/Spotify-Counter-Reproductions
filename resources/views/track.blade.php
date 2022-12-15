@@ -13,7 +13,7 @@
     .text{
         font-family: CircularSpotifyText;
         position: absolute;
-        top: 205.5px;
+        top: 204.5px;
         left: 563px;
         font-size: 42px;
         margin-left: 6px;

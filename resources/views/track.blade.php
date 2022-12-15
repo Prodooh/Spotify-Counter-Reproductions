@@ -39,8 +39,7 @@
     }
 
     #myinput {
-        background: linear-gradient(to right, white 0%, white 100%, #A9A9A9 0%, #A9A9A9 100%);
-        border: solid 2px white;
+        background: linear-gradient(to right, #ffffff 0%, #ffffff 40%, #5CBE83 50%, #5CBE83 100%);
         border-radius: 8px;
         height: 7px;
         width: 356px;
@@ -71,7 +70,7 @@
 <script>
     document.getElementById("myinput").oninput = function() {
         var value = (this.value-this.min)/(this.max-this.min)*100
-        this.style.background = 'linear-gradient(to right, white 0%, #white ' + value + '%, #fff ' + value + '%, grey 100%)'
+        this.style.background = 'linear-gradient(to right, #ffffff 0%, #ffffff ' + value + '%, #5CBE83 ' + value + '%, #5CBE83 100%)'
     };
 </script>
 </BODY>

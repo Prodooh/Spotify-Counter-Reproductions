@@ -33,7 +33,6 @@ class Controller extends BaseController
     }
 
     public function track(Reproduction $reproduction){
-
         $reproductions = $reproduction->reproductions;
         return view('track')->with('reproductions', $reproductions);
 

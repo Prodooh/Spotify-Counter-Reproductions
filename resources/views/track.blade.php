@@ -13,10 +13,11 @@
     .text{
         font-family: CircularSpotifyText;
         position: absolute;
-        top: 193px;
+        top: 194px;
         left: 653px;
-        font-size: 48px;
+        font-size: 44px;
         background-color: #18d464;
+        margin-left: 6px;
     }
     .text-2{
         font-family: CircularSpotifyText;
@@ -63,7 +64,10 @@
 </style>
 <div class="contenedor">
 <img src="{{asset('img/unnamed.jpg')}}" width="3456" height="288">
-    <div class="text">{{number_format($reproductions)}}</div>
+    <div class="text">
+        {{number_format($reproductions)}}
+        <span>reproducciones.</span>
+    </div>
     <div class="text-2">{{number_format($reproductions)}}</div>
     <div class="range-custom"><input type="range" id="myinput" min="1" max="31" value="{{date('d')}}" style="width: 1150px; height: 20px;" ></div>
 </div>

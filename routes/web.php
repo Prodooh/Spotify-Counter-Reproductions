@@ -21,3 +21,5 @@ Auth::routes(['register' => false]);
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/track/{reproduction}', [App\Http\Controllers\Controller::class, 'track'])->name('get.track');
+Route::get('/playlist', [App\Http\Controllers\Controller::class, 'playlist'])->name('get.playlist');
+Route::get('/updatePlaylist', [App\Http\Controllers\Controller::class, 'playlistView'])->name('get.playlist.view');

@@ -13,18 +13,22 @@
     .text{
         font-family: CircularSpotifyText;
         position: absolute;
-        top: 205.5px;
-        left: 563px;
-        font-size: 42px;
+        top: 203.5px;
+        left: 805px;
+        font-size: 60px;
         margin-left: 6px;
         width: 570px;
     }
     .text-2{
         font-family: CircularSpotifyText;
         position: absolute;
-        top: 20px;
-        left: 2200px;
+        top: 650px;
+        left: 171px;
         font-size: 80px;
+        width: 600px;
+    }
+    .text-2 span{
+        font-size: 50px;
     }
     .contenedor{
         margin-left: -8px;
@@ -34,8 +38,8 @@
     .range-custom{
         background-color: #18d464;
         position: absolute;
-        top: 130px;
-        left: 1796px;
+        top: 780px;
+        left: 166px;
     }
 
     #myinput {
@@ -61,13 +65,12 @@
 
 </style>
 <div class="contenedor">
-<img src="{{asset('img/track.jpg')}}" width="3451" height="283">
+<img src="{{asset('img/playlist.jpg')}}" width="1280" height="1152">
     <div class="text">
         {{number_format($reproductions)}}
-        <span>reproducciones.</span>
     </div>
-    <div class="text-2">{{number_format($reproductions)}}</div>
-    <div class="range-custom"><input type="range" id="myinput" min="1" max="31" value="{{date('d')}}" style="width: 1150px; height: 20px;" ></div>
+    <div class="text-2">{{number_format($reproductions)}} <span>streams</span> </div>
+    <div class="range-custom"><input type="range" id="myinput" min="1" max="31" value="{{date('d')}}" style="width: 1000px; height: 20px;" ></div>
 </div>
 
 <script>

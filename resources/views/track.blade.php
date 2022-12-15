@@ -62,7 +62,7 @@
 </style>
 <div class="contenedor">
 
-    <img src="{{asset('img/track-1.jpg')}}" width="3451" height="283">
+    <img src="{{asset('img/track-1.jpg')}}" width="3446" height="278">
 
 {{--<img src="{{asset('img/track.jpg')}}" width="3451" height="283">--}}
 {{--    <div class="text">--}}

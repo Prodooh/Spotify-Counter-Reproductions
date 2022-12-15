@@ -16,7 +16,6 @@
         top: 194px;
         left: 653px;
         font-size: 44px;
-        background-color: #12D861;
         margin-left: 6px;
     }
     .text-2{
@@ -25,7 +24,6 @@
         top: 20px;
         left: 2200px;
         font-size: 80px;
-        background-color: #18d464;
     }
     .contenedor{
         margin-left: -8px;

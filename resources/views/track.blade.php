@@ -60,7 +60,7 @@
 
 </style>
 <div class="contenedor">
-<img src="{{asset('img/unnamed.jpg')}}" width="3456" height="288">
+<img src="{{asset('img/track.jpg')}}" width="3456" height="288">
     <div class="text">
         {{number_format($reproductions)}}
         <span>reproducciones.</span>

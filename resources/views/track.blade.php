@@ -16,7 +16,7 @@
         top: 194px;
         left: 653px;
         font-size: 44px;
-        background-color: #18d464;
+        background-color: #12D861;
         margin-left: 6px;
     }
     .text-2{

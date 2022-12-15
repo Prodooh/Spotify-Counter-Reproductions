@@ -13,9 +13,9 @@
     .text{
         font-family: CircularSpotifyText;
         position: absolute;
-        top: 194px;
-        left: 653px;
-        font-size: 44px;
+        top: 205.5px;
+        left: 563px;
+        font-size: 42px;
         margin-left: 6px;
     }
     .text-2{

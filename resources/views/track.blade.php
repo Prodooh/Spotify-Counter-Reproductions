@@ -34,41 +34,45 @@
     .range-custom{
         background-color: #18d464;
         position: absolute;
-        top: 60px;
-        left: 1800px;
+        top: 130px;
+        left: 1796px;
     }
 
-    .form-range::-webkit-slider-thumb {
-        width: 1rem;
-        height: 1rem;
-        margin-top: -.25rem;
-        background-color: white;
-        border: 0;
-        border-radius: 1rem;
-        -webkit-transition: background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
-        transition: background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    #myinput {
+        background: linear-gradient(to right, white 0%, white 100%, #A9A9A9 0%, #A9A9A9 100%);
+        border: solid 2px white;
+        border-radius: 8px;
+        height: 7px;
+        width: 356px;
+        outline: none;
+        transition: background 450ms ease-in;
         -webkit-appearance: none;
-        appearance: none
     }
 
-    .form-range::-moz-range-thumb {
-        width: 1rem;
-        height: 1rem;
-        background-color: white;
-        border: 0;
-        border-radius: 1rem;
-        -moz-transition: background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
-        transition: background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
-        -moz-appearance: none;
-        appearance: none
+    input[type='range']::-webkit-slider-thumb {
+        width: 10px;
+        -webkit-appearance: none;
+        height: 10px;
+        cursor: ew-resize;
+        background: white;
+        box-shadow: -20px 0 0 20px white;
+        border-radius: 60%;
     }
+
 
 </style>
 <div class="contenedor">
 <img src="{{asset('img/unnamed.jpg')}}" width="3456" height="288">
     <div class="text">{{number_format($reproductions)}}</div>
     <div class="text-2">{{number_format($reproductions)}}</div>
-    <div class="range-custom"><input type="range" class="form-range" min="1" max="31" value="{{date('d')}}" ></div>
+    <div class="range-custom"><input type="range" id="myinput" min="1" max="31" value="{{date('d')}}" style="width: 1150px; height: 20px;" ></div>
 </div>
+
+<script>
+    document.getElementById("myinput").oninput = function() {
+        var value = (this.value-this.min)/(this.max-this.min)*100
+        this.style.background = 'linear-gradient(to right, white 0%, #white ' + value + '%, #fff ' + value + '%, grey 100%)'
+    };
+</script>
 </BODY>
 </HTML>

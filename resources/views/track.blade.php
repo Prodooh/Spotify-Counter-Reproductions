@@ -13,7 +13,7 @@
     .text{
         font-family: CircularSpotifyText;
         position: absolute;
-        top: 201.5px;
+        top: 199px;
         left: 563px;
         font-size: 42px;
         margin-left: 6px;
@@ -61,17 +61,14 @@
 
 </style>
 <div class="contenedor">
-
-    <img src="{{asset('img/track-1.jpg')}}" width="3446" height="278">
-
-{{--<img src="{{asset('img/track.jpg')}}" width="3451" height="283">--}}
-{{--    <div class="text">--}}
-{{--        {{number_format($reproductions)}}--}}
-{{--        <span>reproducciones.</span>--}}
-{{--    </div>--}}
-{{--    <div class="text-2">{{number_format($reproductions)}}</div>--}}
-{{--    <div class="range-custom"><input type="range" id="myinput" min="1" max="31" value="{{date('d')}}" style="width: 1150px; height: 20px;" ></div>--}}
-{{--</div>--}}
+<img src="{{asset('img/track.jpg')}}" width="3446" height="278">
+    <div class="text">
+        {{number_format($reproductions)}}
+        <span>reproducciones.</span>
+    </div>
+    <div class="text-2">{{number_format($reproductions)}}</div>
+    <div class="range-custom"><input type="range" id="myinput" min="1" max="31" value="{{date('d')}}" style="width: 1150px; height: 20px;" ></div>
+</div>
 
 <script>
     document.getElementById("myinput").oninput = function() {

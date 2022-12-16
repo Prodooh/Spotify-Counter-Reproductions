@@ -36,15 +36,12 @@ class Controller extends BaseController
         return redirect('home')->with('status', 'Reproducciones actualizadas con éxito');
     }
 
-    /**
-     * @param Request $request
-     * @return Application|RedirectResponse|Redirector
-     */
-    public function updatePlaylist(Request $request): Redirector|RedirectResponse|Application
+
+    public function updatePlaylist(Request $request)
     {
+        dd("test");
         try{
-            dd(Reproduction::find(2));
-            Reproduction::find(2)->get()->update($request->only('reproductions'));
+            $reproduction->update($request->only('reproductions'));
         }catch (\Exception $e){
             return redirect('home')->with('status', 'Error: ' . $e);
         }
@@ -70,13 +67,5 @@ class Controller extends BaseController
         $reproductions = Reproduction::find(2)->reproductions;
         return view('playlist')->with('reproductions', $reproductions);
 
-    }
-
-    /**
-     * @return Application|Factory|View
-     */
-    public function playlistView(): View|Factory|Application
-    {
-        return view('updatePlay');
     }
 }

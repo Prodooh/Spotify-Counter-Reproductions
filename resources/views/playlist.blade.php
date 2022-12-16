@@ -25,7 +25,7 @@
         top: 650px;
         left: 171px;
         font-size: 80px;
-        width: 600px;
+        width: 640px;
     }
     .text-2 span{
         font-size: 50px;

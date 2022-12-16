@@ -39,7 +39,7 @@ class Controller extends BaseController
 
     public function updatePlaylist(Request $request)
     {
-        dd("test");
+        $reproduction = Reproduction::find(2);
         try{
             $reproduction->update($request->only('reproductions'));
         }catch (\Exception $e){

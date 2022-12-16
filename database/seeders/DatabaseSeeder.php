@@ -22,13 +22,18 @@ class DatabaseSeeder extends Seeder
         //     'email' => 'test@example.com',
         // ]);
 
+//        Reproduction::create([
+//            'track' => 'Test',
+//            'reproductions' => 1343247
+//        ]);
+
         Reproduction::create([
-            'track' => 'Test',
+            'track' => 'playlist',
             'reproductions' => 1343247
         ]);
 
-        $this->call([
-            UsersSeeder::class
-        ]);
+//        $this->call([
+//            UsersSeeder::class
+//        ]);
     }
 }

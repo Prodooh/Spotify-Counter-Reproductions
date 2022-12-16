@@ -43,9 +43,9 @@ class Controller extends BaseController
         try{
             $reproduction->update($request->only('reproductions'));
         }catch (\Exception $e){
-            return redirect('home')->with('status', 'Error: ' . $e);
+            return redirect()->back()->with('status', 'Error: ' . $e);
         }
-        return redirect('home')->with('status', 'Reproducciones actualizadas con éxito');
+        return redirect()->back()->with('status', 'Reproducciones actualizadas con éxito');
     }
 
     /**

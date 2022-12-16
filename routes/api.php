@@ -18,5 +18,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::post('/{reproduction}',[\App\Http\Controllers\Controller::class,'update'])->name('update.track');
 Route::post('/updatePlaylist',[\App\Http\Controllers\Controller::class,'updatePlayList'])->name('update.playlist');
+Route::post('/{reproduction}',[\App\Http\Controllers\Controller::class,'update'])->name('update.track');
